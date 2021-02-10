@@ -12,6 +12,7 @@ def index():
 def by_four_board():
     return render_template("8x4.html")
 
+# Render an x by x red and black checkboard
 @app.route('/<int:x>/<int:y>')
 def x_by_y_board(x, y):
     return render_template("xbyY.html", x=x, y=y)
